@@ -8,12 +8,7 @@ local earth_cooldown = 1 -- the cooldown on particle generation in ticks while o
 local particle_duration = 40 -- how many ticks a particle lasts
 local particle_size = 0.4 -- the size of the particle. 1 is default
 
-function randomOffset(vector) 
-    out_x = vector.x + (radius * 2) * (math.random() - 0.5)
-    out_y = vector.y 
-    out_z = vector.z + (radius * 2) * (math.random() - 0.5)
-    return vec(out_x, out_y, out_z)
-end
+local math_handler = require('math_handler')
 
 local aura = false
 counter = 0
