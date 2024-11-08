@@ -2,6 +2,7 @@
 local orbit_bone = models.model.root.Torso.NMCH.Head.SpellTarget -- The bone around which to generate the orbit
 local orbit_radius = 1 -- The radius of the orbit in blocks
 local orbit_coarsity = 0.4 --Higher = more round, more particles, slower circle. Us cautiously. Default = 0.4
+local orbit_decay = 0 --How many ticks a particle should disappear before being replaced by a new particle. Default = 0
 
 
 local orbit_counter = 0
